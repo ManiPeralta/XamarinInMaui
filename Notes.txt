@@ -1,0 +1,3 @@
+https://www.youtube.com/watch?v=cN1hqYf67zg&list=PL0CKdD7TV8pG0kNyfWO5LFqeU6J6Zj_49&index=10
+
+https://learn.microsoft.com/en-us/xamarin/xamarin-forms/xaml/namespaces

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.QuotesPage"
+             Title="QuotesPage">
+    <StackLayout Margin="20">
+        <Label 
+            Text="Einstein Famous Quotes"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+
+        <Label x:Name="quoteLabel"
+               BindingContext="{x:Reference fontColourSlider}"
+               BindingContext="{x:Reference fontSizeSlider}"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center"
+               Text="Quote">
+            <Label.BindingContext>
+                <MultiBinding Converter="{}"
+            </Label.BindingContext>
+        </Label>
+        
+
+        <Button Text="Next"
+                TextColor="Black"
+                BackgroundColor="LightGray"
+                Clicked="Button_Clicked"
+                />
+        
+        
+        <Slider Maximum="20"
+                x:Name="fontSizeSlider"
+                MinimumTrackColor="LightBlue"
+                MaximumTrackColor="LightGray"
+                ThumbColor="LightBlue" />
+
+        <Label x:Name="fontSizeLabel"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center"
+               Text="Font Size" />
+        
+        
+        <Slider Maximum="20"
+                x:Name="fontColourSlider"
+                MinimumTrackColor="LightBlue"
+                MaximumTrackColor="LightGray"
+                ThumbColor="LightBlue" />
+
+    </StackLayout>
+</ContentPage>

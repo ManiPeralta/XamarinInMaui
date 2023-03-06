@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.GreetPage"
+             Title="GreetPage">
+
+
+    <StackLayout Margin="20">
+        <Label Text="Rotating Text" 
+               BindingContext="{x:Reference slider}"
+               Rotation="{Binding Value}"
+               HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand"
+               x:Name="rotatingLabel"
+               FontSize="Large"/>
+        <Slider Maximum="360"
+                x:Name="slider"
+                MinimumTrackColor="Green"
+                MaximumTrackColor="Red"
+                ThumbColor="Green"/>
+        <Label BindingContext="{x:Reference slider}"
+               Text="{Binding Value, StringFormat='The angle is {0:F2} degrees'}" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center"
+               x:Name="sliderValue"
+               FontSize="Medium"/>
+    </StackLayout>
+    
+
+</ContentPage>
