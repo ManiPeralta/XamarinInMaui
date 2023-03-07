@@ -4,45 +4,42 @@
              x:Class="Xamarin.QuotesPage"
              Title="QuotesPage">
     <StackLayout Margin="20">
-        <Label 
+        <Label FontSize="40"
+               TextColor="Purple"
             Text="Einstein Famous Quotes"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-
         <Label x:Name="quoteLabel"
-               BindingContext="{x:Reference fontColourSlider}"
-               BindingContext="{x:Reference fontSizeSlider}"
                VerticalOptions="CenterAndExpand"
                HorizontalOptions="Center"
-               Text="Quote">
-            <Label.BindingContext>
-                <MultiBinding Converter="{}"
-            </Label.BindingContext>
+               Text="Quote"> 
         </Label>
-        
 
         <Button Text="Next"
                 TextColor="Black"
                 BackgroundColor="LightGray"
                 Clicked="Button_Clicked"
-                />
+                />        
         
-        
-        <Slider Maximum="20"
+        <Slider 
+                Maximum="80"
+                Minimum="20"
                 x:Name="fontSizeSlider"
+                ValueChanged="fontSizeSlider_ValueChanged"
                 MinimumTrackColor="LightBlue"
                 MaximumTrackColor="LightGray"
-                ThumbColor="LightBlue" />
+                ThumbColor="LightBlue"
+                 />
 
         <Label x:Name="fontSizeLabel"
-               VerticalOptions="CenterAndExpand"
+               VerticalOptions="End"
                HorizontalOptions="Center"
                Text="Font Size" />
         
         
-        <Slider Maximum="20"
-                x:Name="fontColourSlider"
+        <Slider x:Name="fontColourSlider"
+                ValueChanged="fontColourSlider_ValueChanged"
                 MinimumTrackColor="LightBlue"
                 MaximumTrackColor="LightGray"
                 ThumbColor="LightBlue" />

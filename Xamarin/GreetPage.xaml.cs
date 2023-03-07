@@ -6,5 +6,11 @@ public partial class GreetPage : ContentPage
 	{
 		InitializeComponent();
 		
-    }  
+    }
+
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        //DisplayAlert("Greet", "Hola a todos!", "OK");
+        showMessageLabel.Text = "Hola cabron!";
+    }
 }

@@ -8,7 +8,27 @@
 
     <ShellContent
         Title="Home"
+        ContentTemplate="{DataTemplate local:StackLayoutPage}"
+        Route="StackLayoutPage" />
+
+    <!--<ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:RotatingTextTwoPage}"
+        Route="RotatingTextTwoPage" />-->
+
+    <!--<ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:GreetButtonPage}"
+        Route="GreetButtonPage" />-->
+
+    <!--<ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:GreetPage}"
+        Route="GreetPage" />-->
+
+    <!--<ShellContent
+        Title="Home"
         ContentTemplate="{DataTemplate local:QuotesPage}"
-        Route="QuotesPage" />
+        Route="QuotesPage" />-->
 
 </Shell>

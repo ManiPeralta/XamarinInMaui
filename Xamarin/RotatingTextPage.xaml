@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.RotatingTextPage"
+             Title="RotatingTextPage">
+    
+    <StackLayout>
+        <Label 
+            Text="Rotating Text"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"
+            x:Name="rotatingLabel"
+            FontSize="50"/>
+        
+        <Slider Maximum="360"
+                ValueChanged="Slider_ValueChanged"
+                MinimumTrackColor="Green"
+                MaximumTrackColor="Red"
+                ThumbColor="Green"/>
+        
+        <Label Text="0"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            x:Name="sliderValue"   />
+    </StackLayout>
+    
+</ContentPage>

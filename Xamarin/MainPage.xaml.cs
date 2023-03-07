@@ -24,26 +24,26 @@ public partial class MainPage : ContentPage
 
         //greetButton = new Button()
         //{
-        //	HorizontalOptions = LayoutOptions.Center,
-        //	VerticalOptions = LayoutOptions.CenterAndExpand,
-        //	Text = "Greet"
+        //    HorizontalOptions = LayoutOptions.Center,
+        //    VerticalOptions = LayoutOptions.CenterAndExpand,
+        //    Text = "Greet"
         //};
-        //      greetButton.Clicked += GreetButton_Clicked;
-        //layout.Children.Add( greetButton );
+        //greetButton.Clicked += GreetButton_Clicked;
+        //layout.Children.Add(greetButton);
         //Content = layout;
     }
 
-    //  private void GreetButton_Clicked(object sender, EventArgs e)
-    //  {
-    //DisplayAlert("Greet", "Hola amigos", "OK");
-    //  }
+    //private void GreetButton_Clicked(object sender, EventArgs e)
+    //{
+    //    DisplayAlert("Greet", "Hola amigos", "OK");
+    //}
 
-    //  private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
-    //  {
-    //double value = e.NewValue;
-    //rotatingLabel.Rotation = value;
-    //sliderValue.Text = value.ToString();
-    //  }
+    //private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
+    //{
+    //    double value = e.NewValue;
+    //    rotatingLabel.Rotation = value;
+    //    sliderValue.Text = value.ToString();
+    //}
 
 }
 

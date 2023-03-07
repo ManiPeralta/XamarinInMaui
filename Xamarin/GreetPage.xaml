@@ -4,27 +4,18 @@
              x:Class="Xamarin.GreetPage"
              Title="GreetPage">
 
+    <StackLayout>
+         <Button HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Text="Greet"
+                Clicked="Button_Clicked">
+        
+        </Button>
 
-    <StackLayout Margin="20">
-        <Label Text="Rotating Text" 
-               BindingContext="{x:Reference slider}"
-               Rotation="{Binding Value}"
-               HorizontalOptions="Center" 
-               VerticalOptions="CenterAndExpand"
-               x:Name="rotatingLabel"
-               FontSize="Large"/>
-        <Slider Maximum="360"
-                x:Name="slider"
-                MinimumTrackColor="Green"
-                MaximumTrackColor="Red"
-                ThumbColor="Green"/>
-        <Label BindingContext="{x:Reference slider}"
-               Text="{Binding Value, StringFormat='The angle is {0:F2} degrees'}" 
-               HorizontalOptions="Center" 
-               VerticalOptions="Center"
-               x:Name="sliderValue"
-               FontSize="Medium"/>
+        <Label Text="Hola"
+               x:Name="showMessageLabel"
+               VerticalOptions="End"
+               HorizontalOptions="Center" />       
     </StackLayout>
-    
 
 </ContentPage>
